@@ -7,6 +7,8 @@
   3. DockerDesktopアプリを立ち上げる
   4.     docker-compose up -d --build
 
-mysql:platform: linux/x86_64
+mysql:
+
+platform: linux/x86_64
 image: mysql:8.0.26
 environment:
