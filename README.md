@@ -9,6 +9,6 @@
 
 mysql:
 
-platform: linux/x86_64
-image: mysql:8.0.26
-environment:
+    platform: linux/x86_64
+    image: mysql:8.0.26
+    environment:
