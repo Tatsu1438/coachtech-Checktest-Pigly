@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/weight_logs', [WeightLogController::class, 'weight_logs']);
+Route::get('/weight_logs/create', [WeightLogController::class, 'create']);
+Route::get('/weight_logs/search', [WeightLogController::class, 'search']);
+Route::get('/weight_logs/goal_setting', [WeightLogController::class, 'goal_setting']);
+Route::get('/register', [WeightLogController::class, 'register']);
+Route::get('/register/step1', [WeightLogController::class, 'step1']);
+Route::get('/register/step2', [WeightLogController::class, 'step2']);
+Route::get('/login', [WeightLogController::class, 'login']);
+Route::get('/logout', [WeightLogController::class, 'logout']);
