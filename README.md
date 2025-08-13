@@ -42,10 +42,15 @@ laravel環境構築：
     php artisan storage:link
 
 使用技術
+
 PHP 8.1-fpm
+
 Laravel Framework 10.48.29
+
 MySQL 8.0.26
 
 URL
+
 開発環境：http://localhost/
+
 phpMyAdmin: http://localhost:8083/
