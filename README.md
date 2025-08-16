@@ -49,6 +49,13 @@ Laravel Framework 10.48.29
 
 MySQL 8.0.26
 
+
+ログインIDとパスワード
+
+・メールアドレス: heaney.ivory@example.net
+
+•	パスワード: password
+
 URL
 
 開発環境：http://localhost/
