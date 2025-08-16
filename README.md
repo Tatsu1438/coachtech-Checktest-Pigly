@@ -33,6 +33,11 @@ laravel環境構築：
     
     php artisan migrate
 
+users テーブルに current_weight と goal_weight を追加するマイグレーションを作る。
+
+　　php artisan make:migration add_weight_columns_to_users_table --table=users
+　　
+
 シーディングの実行
 
     php artisan db:seed
