@@ -52,9 +52,9 @@ MySQL 8.0.26
 
 ログインIDとパスワード
 
-・メールアドレス: heaney.ivory@example.net
+	•	メールアドレス: heaney.ivory@example.net
 
-•	パスワード: password
+	•	パスワード: password
 
 URL
 
