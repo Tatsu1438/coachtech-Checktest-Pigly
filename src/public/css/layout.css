@@ -1,0 +1,9 @@
+.header-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #EC87EF;
+    font-family: 'Lora', serif;
+}

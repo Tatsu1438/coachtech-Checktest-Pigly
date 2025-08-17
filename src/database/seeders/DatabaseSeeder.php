@@ -2,21 +2,26 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use App\Models\WeightLog;
+use App\Models\WeightTarget;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        // 1名のユーザー作成
+        $user = User::factory()->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // そのユーザーに紐づくweight_logsを35件作成
+        WeightLog::factory(35)->create([
+            'user_id' => $user->id,
+        ]);
+
+        // そのユーザーに紐づくweight_targetを1件作成
+        WeightTarget::factory()->create([
+            'user_id' => $user->id,
+        ]);
     }
 }

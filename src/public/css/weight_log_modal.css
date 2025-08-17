@@ -1,0 +1,73 @@
+/* weight_log_modal.css */
+
+/* モーダル全体の背景 */
+.modal {
+    display: none;
+    /* 初期は非表示 */
+    position: fixed;
+    z-index: 1000;
+    /* 他の要素より前に表示 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 半透明の黒 */
+    justify-content: center;
+    align-items: center;
+}
+
+/* モーダルの中身 */
+.modal-content {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    /* 画面幅が狭くても対応 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* 閉じるボタン */
+.modal-content #closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* フォーム内のラベルと入力 */
+.modal-content form div {
+    margin-bottom: 12px;
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.modal-content form input {
+    width: 100%;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* フォームの送信ボタン */
+.modal-content form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content form button:hover {
+    background-color: #45a049;
+}
